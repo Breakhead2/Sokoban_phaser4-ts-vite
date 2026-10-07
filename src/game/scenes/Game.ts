@@ -14,9 +14,9 @@ export class Game extends Scene
 
     create ()
     {
-        this.add.text(512, 490, 'Make sokoban', {
-            fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
+        this.add.text(256, 256, 'Make sokoban', {
+            fontFamily: 'Arial Black', fontSize: 24, color: '#ffffff',
+            stroke: '#000000', strokeThickness: 4,
             align: 'center'
         }).setOrigin(0.5).setDepth(100);
         

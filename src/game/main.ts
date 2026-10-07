@@ -1,5 +1,7 @@
 import { Game as MainGame } from './scenes/Game';
-import { AUTO, Game, Scale,Types } from 'phaser';
+import { Boot } from './scenes/Boot';
+import { Preload } from './scenes/Preload';
+import { AUTO, Game,Types } from 'phaser';
 
 const config: Types.Core.GameConfig = {
     type: AUTO,
@@ -7,11 +9,9 @@ const config: Types.Core.GameConfig = {
     height: 512,
     parent: 'game-container',
     backgroundColor: '#028af8',
-    scale: {
-        mode: Scale.FIT,
-        autoCenter: Scale.CENTER_BOTH
-    },
     scene: [
+        Boot,
+        Preload,
         MainGame
     ]
 };
